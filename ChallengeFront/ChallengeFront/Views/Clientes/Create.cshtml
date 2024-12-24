@@ -1,0 +1,41 @@
+﻿@model ClienteViewModel
+
+<h2>Nuevo Cliente</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label for="Nombres" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="Nombres" name="Nombres" />
+    </div>
+
+    <div class="mb-3">
+        <label for="Apellidos" class="form-label">Apellido:</label>
+        <input type="text" class="form-control" id="Apellidos" name="Apellidos" />
+    </div>
+
+    <div class="mb-3">
+        <label for="Email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="Email" name="Email" />
+    </div>
+
+    <div class="mb-3">
+        <label for="Telefono" class="form-label">Telefono:</label>
+        <input type="text" class="form-control" id="Telefono" name="Celular" />
+    </div>
+    <div class="mb-3">
+        <label for="Domicilio" class="form-label">Domicilio:</label>
+        <input type="text" class="form-control" id="Telefono" name="Domicilio" />
+    </div>
+
+    <div class="mb-3">
+        <label for="Cuit" class="form-label">CUIT:</label>
+        <input type="text" class="form-control" id="Cuit" name="Cuit" />
+    </div>
+
+    <div class="mb-3">
+        <label for="FechaNacimiento" class="form-label">Fecha Nacimiento:</label>
+        <input type="date" class="form-control" id="FechaNacimiento" name="FechaNacimiento" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear</button>
+</form>

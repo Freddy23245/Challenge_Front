@@ -1,0 +1,13 @@
+﻿@model ClienteViewModel
+
+<h2>Detalles del Cliente</h2>
+
+<div>
+    <h3>@Model.Nombres</h3>
+    <h3>@Model.Apellidos</h3>
+    <p>Fecha Nacimiento: @Model.FechaNacimiento?.ToString("yyyy-MM-dd")</p>
+    <p>CUIT: @Model.Cuit</p>
+    <p>Domicilio: @Model.Domicilio</p>
+    <p>Correo electrónico: @Model.Email</p>
+    <p>Teléfono: @Model.Celular</p>
+</div>

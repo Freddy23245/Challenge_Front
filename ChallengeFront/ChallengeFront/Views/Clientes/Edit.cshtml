@@ -1,0 +1,43 @@
+﻿@model ClienteViewModel
+
+<h2>Editar Cliente</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+
+    <div class="mb-3">
+        <label for="Nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="Nombre" name="Nombres" value="@Model.Nombres" />
+    </div>
+
+    <div class="mb-3">
+        <label for="Apellido" class="form-label">Apellido:</label>
+        <input type="text" class="form-control" id="Apellido" name="Apellidos" value="@Model.Apellidos" />
+    </div>
+
+    <div class="mb-3">
+        <label for="Email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="Email" name="Email" value="@Model.Email" />
+    </div>
+
+    <div class="mb-3">
+        <label for="Telefono" class="form-label">Telefono:</label>
+        <input type="text" class="form-control" id="Telefono" name="Celular" value="@Model.Celular" />
+    </div>
+    <div class="mb-3">
+        <label for="Telefono" class="form-label">Domicilio:</label>
+        <input type="text" class="form-control" id="Telefono" name="Domicilio" value="@Model.Domicilio" />
+    </div>
+    <div class="mb-3">
+        <label for="Cuit" class="form-label">CUIT:</label>
+        <input type="text" class="form-control" id="Cuit" name="Cuit" value="@Model.Cuit" />
+    </div>
+
+    <div class="mb-3">
+        <label for="FechaNacimiento" class="form-label">Fecha Nacimiento:</label>
+        <input type="date" class="form-control" id="FechaNacimiento" name="FechaNacimiento" value="@Model.FechaNacimiento?.ToString("yyyy-MM-dd") ?? string.Empty" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+</form>
+
